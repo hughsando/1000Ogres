@@ -1,0 +1,13 @@
+-swf 1000Ogres.swf
+-main App
+-swf-version 9
+-swf-header 800:600:30
+-lib xinf
+
+
+--next
+-main App
+-neko 1000Ogres.n
+-lib xinf
+
+

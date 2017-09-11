@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  
+  <meta
+     title="1000 Ogres"
+     package="com.gamehaxe.ogres1k"
+     version="1.0"
+     company="NME" 
+  />
+  
+  <app
+     file="1000Ogres" 
+     main="TileTest"
+  />
+  
+  <window
+     width="800" 
+     height="600" 
+     orientation="landscape" 
+     fps="60"
+     background="0xeeeeee"
+     require_shaders="true"
+     resizable="true"
+     hardware="true"
+  />
+
+  <icon name="${NME}/assets/icons/nme.svg" />
+  <assets >
+    <asset name="GameData.gmz" />
+  </assets>
+  <haxelib name="nme" />
+  
+</project>
