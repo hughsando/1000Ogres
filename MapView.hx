@@ -75,8 +75,8 @@ class MapView extends Sprite
 
    public function SetWindowSize(inW:Int, inH:Int)
    {
-      mWindowWidth = inW;
-      mWindowHeight = inH;
+      var scale = Math.min(inW/800, inH/600);
+      mBitmap.scaleX = mBitmap.scaleY = scale;
    }
 
    public function Centre(inCX:Float,inCY:Float) : Void

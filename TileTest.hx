@@ -86,18 +86,19 @@ class TileTest extends Sprite
        addChild(fps_disp);
        fps_disp.text = 'Loading...';
 
-       stage.addEventListener(Event.RESIZE, Resize );
+       stage.addEventListener(Event.RESIZE, function(_) setSize() );
        stage.addEventListener(KeyboardEvent.KEY_DOWN, OnKeyDown );
 
        mProj = new GameProject("GameData.gmz");
        mProj.Load(OnComplete);
+       setSize();
    }
 
 
-    function Resize( e:Dynamic ) :Void
+    function setSize( ) :Void
     {
-       mWindowWidth = e.x;
-       mWindowHeight = e.y;
+       mWindowWidth = stage.stageWidth;
+       mWindowHeight = stage.stageHeight;
        mMapView.SetWindowSize(mWindowWidth,mWindowHeight);
     }
 
